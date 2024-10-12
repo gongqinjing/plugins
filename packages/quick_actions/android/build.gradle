@@ -25,7 +25,10 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 29
-
+    
+    if (project.android.hasProperty("namespace")) {
+        namespace = "io.flutter.plugins.quickactions"
+    }
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
