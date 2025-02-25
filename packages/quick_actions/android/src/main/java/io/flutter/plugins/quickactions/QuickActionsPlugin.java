@@ -24,11 +24,11 @@ public class QuickActionsPlugin implements FlutterPlugin, ActivityAware {
    *
    * <p>Must be called when the application is created.
    */
-  @SuppressWarnings("deprecation")
+  /*@SuppressWarnings("deprecation")
   public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
     final QuickActionsPlugin plugin = new QuickActionsPlugin();
     plugin.setupChannel(registrar.messenger(), registrar.context(), registrar.activity());
-  }
+  }*/
 
   @Override
   public void onAttachedToEngine(FlutterPluginBinding binding) {
